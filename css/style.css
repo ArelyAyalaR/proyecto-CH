@@ -1,0 +1,254 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* font-family: 'Work Sans', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Variables */
+:root{
+    --body-color: #e6e6e6;
+    --text-color: #3e3e3e;
+}
+
+.body-section{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #efefef;
+    color: var(--text-color);
+}
+
+/* ---------- Barra de navegación --------------- */
+.bg-space .container .logo{
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+nav.bg-space{
+    background: var(--body-color);
+}
+
+nav.bg-space ul li a{
+    color: var(--text-color);
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 12px;
+}
+
+nav.bg-space ul li a:hover{
+    color: var(--primary-color);
+    border-bottom: 1px solid #407BFF;
+}
+
+/* -------------- Sección Hero -------------- */
+section.hero{
+    padding: 80px 0;
+}
+
+section.hero .text h1{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 73px;
+    color: var(--text-color);
+    margin-top: 37px;
+}
+
+section.hero .text p{
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+.buttons{
+    padding-top: 30px;
+}
+
+.buttons .boton-1{
+    background-color: #407BFF;
+    margin-right: 15px;
+}
+.buttons .btn{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 18px;
+}
+
+@media (max-width:576px){
+    section.hero{
+        text-align: center;
+    }
+
+    .buttons .btn {
+        display: block;
+        margin: 1rem 0;
+    }
+}
+/* ---------- Sección de patrocinadores -------------- */
+.patrocinadores{
+    background: var(--body-color);
+    padding: 40px;
+}
+
+
+/* ---------- Pie de página ------------- */
+.pie-pagina{
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.pie-pagina p{
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 13px;
+    font-weight: 300;
+}
+
+/* -------------------- Sección Equipo ------------------------ */
+.equipo-body{
+    background: var(--body-color);
+}
+
+.equipo-sec{
+   width: 100%;
+}
+
+.equipo-sec .contenedor{
+    width: 80%;
+    margin: auto;
+}
+
+.equipo-sec .contenedor .fila{
+    width: 60%;
+    margin: auto;
+}
+
+.equipo-sec .contenedor .fila .title{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.equipo-sec .contenedor .fila .title h1{
+    font-size: 35px;
+    color: var(--text-color);
+}
+
+.equipo-sec .contenedor .fila .title p{
+    font-size: 20px;
+    margin: 30px 0px;
+    color: var(--text-color);
+}
+
+.equipo-sec .contenedor .tarjeta-per{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.equipo-sec .contenedor .tarjeta-per .tarjeta{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.equipo-sec .contenedor .tarjeta-per .tarjeta .imagen-sec img{
+    border-radius: 50px;
+    border: 6px solid #407BFF;
+}
+
+.equipo-sec .contenedor .tarjeta-per .tarjeta .contenido{
+    width: 100%;
+    text-align: center;
+}
+
+.equipo-sec .contenedor .tarjeta-per .tarjeta .contenido h3{
+    font-size: 30px;
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
+.equipo-sec .contenedor .tarjeta-per .tarjeta .contenido h4{
+    font-size: 20px;
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
+.equipo-sec .contenedor .tarjeta-per .tarjeta .contenido p{
+    font-size: 15px;
+    margin: 16px 0px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 900px){
+    .equipo-sec .contenedor .tarjeta-per{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .equipo-sec .contenedor .tarjeta-per{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* -------------- Sección Contacto -------------------- */
+.bd-contacto{
+    background-color: var(--body-color);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+}
+
+.sec-contacto .boton-contacto{
+    background-color: #407BFF;
+    color: white;
+}
+
+.sec-contacto .texto-con{
+    background-color: #407BFF;
+}
+
+/* ---------------- Sección Servicios ----------------- */
+.sec-servicios{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.fila-section{
+    padding-top: 50px;
+}
+
+.card-body .boton-servicios{
+    background-color: #407BFF;
+    color: #272727;
+    font-weight: bold;
+}
+
+/* -------------- Sobre nosotros ---------------- */
+.nosotros-sec{
+    padding-bottom: 85px;
+    padding-top: 50px;
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nosotros-sec h2{
+    font-size: 70px;
+    padding-top: 5px;
+}
+
+.fila-us{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}

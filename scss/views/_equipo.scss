@@ -1,0 +1,83 @@
+.equipo-sec {
+    width: 100%;
+
+    .contenedor {
+        width: 80%;
+        margin: auto;
+
+        .fila {
+            width: 60%;
+            margin: auto;
+
+            .title {
+                text-align: center;
+                margin-top: 10px;
+
+                // h1 {
+                //     font-size: 50px;
+                //     color: $text-color;
+                //     font-weight: 100;
+                //     font-family: $fuente-1;
+                // }
+
+                p {
+                    font-size: 20px;
+                    margin: 30px 0px;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}
+
+
+.equipo-sec .contenedor .tarjeta-per {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+
+    .tarjeta {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+
+        .imagen-sec {
+            img {
+                border-radius: 50px;
+                border: 6px solid #407BFF;
+            }
+        }
+
+        .contenido {
+            width: 100%;
+            text-align: center;
+
+            h3 {
+                font-size: 30px;
+                margin-top: 10px;
+                color: $text-color;
+            }
+
+            h4 {
+                font-size: 20px;
+                margin-top: 10px;
+                color: $text-color;
+            }
+
+            p {
+                font-size: 15px;
+                margin: 16px 0px;
+                line-height: 1.5;
+                color: $text-color;
+            }
+        }
+    }
+
+
+}

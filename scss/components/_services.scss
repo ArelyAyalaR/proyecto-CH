@@ -1,0 +1,22 @@
+@media (max-width:576px){
+    section.hero{
+        text-align: center;
+    }
+
+    .buttons .btn {
+        display: block;
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .equipo-sec .contenedor .tarjeta-per{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .equipo-sec .contenedor .tarjeta-per{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,16 @@
+@import './abstracts/mixins';
+
+.sec-servicios {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.fila-section {
+    padding-top: 50px;
+}
+
+.card-body {
+    .boton-servicios {
+        @include button-services;
+    }
+}

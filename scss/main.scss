@@ -1,0 +1,22 @@
+// Base
+@import './base/resets';
+@import './base/base';
+
+// Abstracts
+@import './abstracts/variables';
+
+// Layout
+@import './layout/header';
+@import './layout/cuerpo';
+@import './layout/footer';
+
+// Views
+@import './views/contacto';
+@import './views/servicios';
+@import './views/nosotros';
+@import './views/equipo';
+
+// Mixins
+@import './abstracts/mixins';
+
+@import './components/services';
